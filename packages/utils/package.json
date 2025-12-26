@@ -1,10 +1,34 @@
 {
   "name": "@monorepo-demp/utils",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "工具库",
+  "type": "module",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "buildOptions": {
+    "name": "utils",
+    "formats": [
+      "cjs",
+      "esm",
+      "iife"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [],
   "author": "",

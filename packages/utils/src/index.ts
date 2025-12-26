@@ -1,1 +1,3 @@
-console.log("Hello");
+export * from "./string";
+export * from "./math";
+
