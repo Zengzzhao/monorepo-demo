@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-demp/utils",
+  "name": "@monorepo-demo/utils",
   "version": "1.0.0",
   "description": "工具库",
   "type": "module",

@@ -8,13 +8,18 @@
       <span>Number 2</span>
       <input v-model="n2" type="text" data-testid="n2" />
     </div>
+    <div class="sum">
+      <span data-testid="result">sum:{{ result }}</span>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import { sum } from "@monorepo-demo/utils";
 const n1 = ref(1);
 const n2 = ref(2);
+const result = computed(() => sum(Number(n1.value), Number(n2.value)));
 </script>
 
 <style scoped>

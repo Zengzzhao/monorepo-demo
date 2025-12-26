@@ -92,7 +92,11 @@ importers:
 
   apps/frontend: {}
 
-  packages/components: {}
+  packages/components:
+    dependencies:
+      '@monorepo-demo/utils':
+        specifier: workspace:*
+        version: link:../utils
 
   packages/utils: {}
 
