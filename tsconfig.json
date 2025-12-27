@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "module": "esnext",
     "target": "esnext",
-    "types": [],
+    "types": ["vitest/globals", "@vitest/browser/matchers"],
     "lib": ["esnext", "DOM"],
     "sourceMap": true,
     "declaration": true,
